@@ -22,7 +22,6 @@ export class QuestionComment extends Comment<QuestionCommentProps> {
             },
             id,
         )
-
         return questionComment
     }
 }
