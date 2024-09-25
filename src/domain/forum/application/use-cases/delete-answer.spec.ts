@@ -11,6 +11,7 @@ let sut: DeleteAnswerUseCase
 describe('Delete Answer', () => {
     beforeEach(() => {
         inMemoryAnswersRepository = new InMemoryAnswersRepository()
+
         sut = new DeleteAnswerUseCase(inMemoryAnswersRepository)
     })
 
