@@ -8,9 +8,7 @@ export class InMemoryQuestionsRepository implements QuestionsRepository {
 
     constructor(
         private questionAttachmentsRepository: QuestionAttachmentsRepository
-    ) {
-
-    }
+    ) { }
 
     async findBySlug(slug: string) {
         const question = this.items.find(item => item.slug.value === slug)
